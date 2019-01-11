@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         // TODO: Cau lenh When: Bat nhieu dieu kien - switch:case
         var month = 4;
         when (month) {
+            // in 1..3: Trong khoang
             1, 2, 3 -> {
                 Log.d(TAG, "Thang: $month")
                 Log.d(TAG, "Quy I")
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d(TAG, "Thang: $month")
                 Log.d(TAG, "Quy IV")
             }
+            else -> Log.d(TAG, "Khong co gia tri quy")
         }
 
     }
