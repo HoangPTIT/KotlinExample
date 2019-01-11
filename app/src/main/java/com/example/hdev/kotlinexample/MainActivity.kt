@@ -10,13 +10,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // TODO: If - else
-        var a = 10
-        var b = 15
-        if (a > b){
-            Log.d(TAG, "A lon hon B")
-        }else{
-            Log.d(TAG, "A nho hon B")
+        // TODO: Cau lenh When: Bat nhieu dieu kien - switch:case
+        var month = 4;
+        when (month) {
+            1, 2, 3 -> {
+                Log.d(TAG, "Thang: $month")
+                Log.d(TAG, "Quy I")
+            }
+            4, 5, 6 -> {
+                Log.d(TAG, "Thang: $month")
+                Log.d(TAG, "Quy II")
+            }
+            7, 8, 9 -> {
+                Log.d(TAG, "Thang: $month")
+                Log.d(TAG, "Quy III")
+            }
+            10, 11, 12 -> {
+                Log.d(TAG, "Thang: $month")
+                Log.d(TAG, "Quy IV")
+            }
         }
+
     }
 }
