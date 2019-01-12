@@ -10,8 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // TODO: Ham - OOP - Class. Khong co get(), set()
-        var students : Students = Students(123, "Hoang", "BG");
+        // TODO: Ham - OOP - Class.
+        var students : Students = Students();
+        students.setCode(12)
+        students.setName("Hoang")
+        students.setAddress("BG")
         Log.d(TAG, "Student: ${students.toString()}")
     }
 }
