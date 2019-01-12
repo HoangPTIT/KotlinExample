@@ -10,11 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // TODO: Ham - OOP - Class.
-        var students : Students = Students();
-        students.setCode(12)
-        students.setName("Hoang")
-        students.setAddress("BG")
-        Log.d(TAG, "Student: ${students.toString()}")
+        // TODO: Data Class. La 1 class da chua du lieu.
+
+        val transport : Transport = Transport("Bus", "Red")
+        Log.d(TAG, "Transport: ${transport.name} ${transport.color}")
     }
 }
