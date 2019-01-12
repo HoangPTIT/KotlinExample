@@ -10,14 +10,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // TODO: Ham - Function
-        var a = 4;
-        var b = 5;
-        sum(a, b)
-    }
-
-    fun sum(a: Int, b: Int) {
-        var c = a + b;
-        Log.d(TAG, "TONG: $c")
+        // TODO: Ham - OOP - Class. Khong co get(), set()
+        var students : Students = Students(123, "Hoang", "BG");
+        Log.d(TAG, "Student: ${students.toString()}")
     }
 }
