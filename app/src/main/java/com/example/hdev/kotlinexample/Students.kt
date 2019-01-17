@@ -1,6 +1,6 @@
 package com.example.hdev.kotlinexample
 
-class Students {
+class Students  {
     private var code = -1
     private var name = ""
     private var address = ""
